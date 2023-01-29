@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature converter</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="/Images/logo.png" alt="">
+      </div>
+    <div class="container">
+
+        <form id="cal_temp" onsubmit="calculateTemp(); return false">
+            <h2>Temperature Converter</h2>
+            <br>
+
+            <div class="main">
+                <p class="para">Degree</p>
+                <input type="number" name="temp" id="temp" value="0">
+                <p class="para">Type</p>
+                <select name="option" id="option">
+                    <option value="cel">Celsius</option>
+                    <option value="fah">Fahrenheit</option>
+                </select>
+            </div>
+
+            <h3>Result</h3>
+            <span id="output"></span>
+            <br>
+            <button id="submit">Convert</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

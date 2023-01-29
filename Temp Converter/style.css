@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(178, 205, 247);
+}
+
+input,
+select {
+    background-color: rgb(243, 244, 244);
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    max-height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 12pc;
+    height: 9pc;
+    margin-top: 18px;
+    margin-left: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#cal_temp {
+    padding: 29px 67px;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(59, 95, 212);
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.container .main {
+    display: flex;
+    align-items: center;
+}
+
+.para {
+    color: #a1a1a1;
+}
+
+#temp,
+#option {
+    width: 100px;
+    height: 34px;
+    border-radius: 5px;
+    margin: 12px;
+    padding: 8px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+#option {
+    width: 120px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+h3 {
+    color: #8f8f8f;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-weight: normal;
+}
+
+#output {
+    font-size: 30px;
+}
+
+#submit {
+    width: 100%;
+    margin: 25px 0 20px 0;
+    font-size: 18px;
+    background-color: #007aff;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 650px) {
+
+    .logo {
+        padding: 0px;
+    }
+
+    #cal_temp {
+        padding: 10px 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding-top: 10px
+    }
+
+    #temp,
+    #option {
+        width: 72px;
+        margin: 10px;
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 414px) {
+    .logo {
+        padding: 0px;
+    }
+
+    #cal_temp {
+        padding: 20px 32px;
+    }
+}
